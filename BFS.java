@@ -24,15 +24,14 @@ public static boolean checkTuple (Tuple t, LinkedList<Tuple> q) {
 	return false;	
 }
 public static void main (String[] args) {
-	
-	if (args.length != 3) {
-		System.out.println("Incorrect number of arguments. Please enter correctly");
-		return;
-	}
-	
-	int m = Integer.parseInt(args[0]);
-	int n = Integer.parseInt(args[1]);
-	int d = Integer.parseInt(args[2]);
+	Scanner sc=new Scanner(System.in);
+
+	System.out.println("Enter the value of m:");
+	int m = sc.nextInt();
+	System.out.println("Enter the value of n:");
+	int n = sc.nextInt();
+	System.out.println("Enter the value of d:");
+	int d = sc.nextInt();
 	
 	if (m < n) {
 		System.out.println("m should be greater than or equal to n");
